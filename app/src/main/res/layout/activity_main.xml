@@ -38,7 +38,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
->
+        android:visibility="visible">
 
         <FrameLayout
 
@@ -202,8 +202,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:id="@+id/시간예약"
-            android:visibility="visible">
+            android:id="@+id/framelayout2"
+            android:visibility="invisible">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -239,54 +239,72 @@
                         android:checked="false" />
                 </RadioGroup>
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
-
-                    <CalendarView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/calendarView2" />
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="예약완료"
-                            android:id="@+id/button5"
-                            android:layout_marginLeft="0dp" />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="이전으로"
-                            android:id="@+id/button6"
-                            android:layout_marginLeft="0dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <AnalogClock
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/analogClock" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"></RelativeLayout>
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/framelayout3"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CalendarView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/calendarView2" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="예약완료"
+                                    android:id="@+id/button5"
+                                    android:layout_marginLeft="0dp" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="이전으로"
+                                    android:id="@+id/button6"
+                                    android:layout_marginLeft="0dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/framelayout4"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <AnalogClock
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/analogClock" />
+
+                            <TimePicker
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/timePicker" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+
             </LinearLayout>
 
         </FrameLayout>
