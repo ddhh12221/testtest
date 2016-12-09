@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="인원예약"
-
+                android:gravity="center_horizontal"
                 android:id="@+id/textView" />
 
             <LinearLayout
@@ -66,6 +66,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:id="@+id/editText3" />
             </LinearLayout>
 
@@ -84,6 +85,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:id="@+id/editText2" />
             </LinearLayout>
 
@@ -102,6 +104,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:id="@+id/editText" />
             </LinearLayout>
 
@@ -109,38 +112,41 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/LinearTextEdit6"></LinearLayout>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:id="@+id/LinearTextEdit6">
 
-                <RadioButton
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기본할인(5% 할인)"
+                        android:id="@+id/radioButton"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현금할인(10%할인)"
+                        android:id="@+id/radioButton2"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MemberShip있음(20%할인)"
+                        android:id="@+id/radioButton3"
+                        android:checked="false" />
+                </RadioGroup>
+
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="기본할인(5% 할인)"
-                    android:id="@+id/radioButton"
-                    android:checked="false" />
+                    android:id="@+id/imageView" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="현금할인(10%할인)"
-                    android:id="@+id/radioButton2"
-                    android:checked="false" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MemberShip있음(20%할인)"
-                    android:id="@+id/radioButton3"
-                    android:checked="false" />
-            </RadioGroup>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView" />
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -159,6 +165,7 @@
                     android:layout_height="wrap_content"
                     android:text="시간예약 GO"
                     android:id="@+id/button" />
+
             </LinearLayout>
 
             <TextView

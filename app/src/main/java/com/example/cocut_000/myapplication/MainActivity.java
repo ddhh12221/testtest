@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         LL3=(LinearLayout)findViewById(R.id.LinearTextEdit3);
         LL4=(LinearLayout)findViewById(R.id.LinearTextEdit4);
         FL1=(FrameLayout)findViewById(R.id.framelayout1);
+        RB1=(RadioButton)findViewById(R.id.radioButton);
+        RB2=(RadioButton)findViewById(R.id.radioButton2);
+        RB3=(RadioButton)findViewById(R.id.radioButton2);
+        IV1=(ImageView)findViewById(R.id.imageView);
+
 
 
         SW1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -64,6 +69,23 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     FL1.setVisibility(View.INVISIBLE);
                     C1.stop();
+                }
+            }
+        });
+
+        RB1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if(RB1.isChecked()){
+                    IV1.setImageResource(R.drawable.image);
+                }
+                else if(RB2.isChecked()){
+                    IV1.setImageResource(R.drawable.image2);
+                }
+                else if(RB3.isChecked())
+                {
+                    IV1.setImageResource(R.drawable.image3);
                 }
             }
         });
