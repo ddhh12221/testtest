@@ -111,12 +111,12 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/LinearTextEdit6">
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
                     <RadioButton
@@ -142,10 +142,9 @@
                 </RadioGroup>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:id="@+id/imageView" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -165,7 +164,6 @@
                     android:layout_height="wrap_content"
                     android:text="시간예약 GO"
                     android:id="@+id/button" />
-
             </LinearLayout>
 
             <TextView

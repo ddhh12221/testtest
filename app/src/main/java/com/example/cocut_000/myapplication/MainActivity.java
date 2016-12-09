@@ -130,8 +130,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else{
-                    Toast.makeText(this, "인원을 입력하세요", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "인원을입력하세요",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        BT2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FL1.setVisibility(View.VISIBLE);
+                C1.start();
+                C1.setTextColor(Color.BLUE);
             }
         });
 
