@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView IV1;
     FrameLayout FL1;
 
+
     int sum1;
     double sum2, sum3;
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         ET1=(EditText)findViewById(R.id.editText);
         BT1=(Button)findViewById(R.id.button2);
         BT2=(Button)findViewById(R.id.button);
-
+        RG1=(RadioGroup)findViewById(R.id.radioGroup);
 
 
         SW1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -130,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "인원을입력하세요",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "인원을 입력하세요", Toast.LENGTH_SHORT).show();
                 }
             }
         });
