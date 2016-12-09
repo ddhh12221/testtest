@@ -13,7 +13,8 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearTextEdit1">
 
         <Switch
             android:layout_width="wrap_content"
@@ -34,12 +35,14 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayout1">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/LinearTextEdit2">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,12 +54,13 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/LinearTextEdit3">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Text"
+                    android:text="어른(15000원)"
                     android:id="@+id/textView4" />
 
                 <EditText
@@ -68,12 +72,13 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/LinearTextEdit4">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Text"
+                    android:text="청소년(12000원)"
                     android:id="@+id/textView3" />
 
                 <EditText
@@ -85,12 +90,13 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/LinearTextEdit5">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New Text"
+                    android:text="어린이(8000원)"
                     android:id="@+id/textView2" />
 
                 <EditText
@@ -102,7 +108,8 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></LinearLayout>
+                android:layout_height="match_parent"
+                android:id="@+id/LinearTextEdit6"></LinearLayout>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -138,7 +145,8 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/LinearTextEdit7">
 
                 <Button
                     android:layout_width="wrap_content"
